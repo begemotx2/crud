@@ -463,6 +463,9 @@ class RepositoryService extends classes_1.RestfulService {
                     [`${param}1`]: cond.value[1],
                 };
                 break;
+            case 'subset':
+                str = `${field} @> :${param}`;
+                break;
             default:
                 str = `${field} = :${param}`;
                 break;

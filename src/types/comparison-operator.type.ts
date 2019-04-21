@@ -13,4 +13,5 @@ export type ComparisonOperator =
   | 'notin'
   | 'isnull'
   | 'notnull'
-  | 'between';
+  | 'between'
+  | 'subset';

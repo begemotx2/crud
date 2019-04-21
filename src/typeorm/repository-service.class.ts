@@ -660,6 +660,10 @@ export class RepositoryService<T> extends RestfulService<T> {
         };
         break;
 
+      case 'subset':
+        str = `${field} @> :${param}`;
+        break;
+
       default:
         str = `${field} = :${param}`;
         break;
